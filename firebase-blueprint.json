@@ -1,0 +1,59 @@
+{
+  "entities": {
+    "ClinicaData": {
+      "title": "ClinicaData",
+      "description": "The main data object containing all services, banners, curiosities, testimonials, bookings, users, and settings for the clinic.",
+      "type": "object",
+      "properties": {
+        "services": {
+          "type": "array",
+          "description": "List of services and combos offered by the clinic."
+        },
+        "banners": {
+          "type": "array",
+          "description": "Promotional banners displayed on the home page."
+        },
+        "curiosity": {
+          "type": "array",
+          "description": "Fun facts or curiosities about massotherapy."
+        },
+        "testimonials": {
+          "type": "array",
+          "description": "Client reviews and feedback."
+        },
+        "bookings": {
+          "type": "array",
+          "description": "Customer session bookings."
+        },
+        "users": {
+          "type": "array",
+          "description": "Admin users permitted to access the dashboard."
+        },
+        "settings": {
+          "type": "object",
+          "description": "General settings for the clinic (colors, links, maps, fonts)."
+        },
+        "aboutSettings": {
+          "type": "object",
+          "description": "Biographical information about the massotherapist."
+        }
+      },
+      "required": [
+        "services",
+        "banners",
+        "curiosity",
+        "testimonials",
+        "bookings",
+        "users",
+        "settings",
+        "aboutSettings"
+      ]
+    }
+  },
+  "firestore": {
+    "/clinica_data/main": {
+      "schema": "ClinicaData",
+      "description": "Single document path representing the entire cloud configuration and data."
+    }
+  }
+}

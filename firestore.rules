@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 1. Global Safety Net - default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // 2. Main Clinic Data Document
+    match /clinica_data/main {
+      allow read, write: if true;
+    }
+  }
+}

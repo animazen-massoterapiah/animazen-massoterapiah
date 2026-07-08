@@ -1,0 +1,6 @@
+{
+  "name": "Ânima Zen",
+  "description": "Aplicativo de agendamento de massoterapia, catálogo de serviços e painel administrativo da clínica Ânima Zen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

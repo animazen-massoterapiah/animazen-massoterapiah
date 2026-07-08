@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-display: "Cinzel", serif;
+}
+
+/* Custom scrollbars and styling in light green/beige style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbfaf6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dfd8cb;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1b4332;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fbfaf6;
+  color: #1b2a1f;
+}
+
+/* THEME OVERRIDES FOR SOFT BEIGE & FOREST GREEN ACCENTS */
+
+/* Main backgrounds */
+.bg-\[\#1c120c\] {
+  background-color: #fbfaf6 !important;
+}
+.bg-\[\#1c120c\]\/d2 {
+  background-color: rgba(251, 250, 246, 0.85) !important;
+}
+.bg-\[\#1c120c\]\/80 {
+  background-color: rgba(251, 250, 246, 0.8) !important;
+}
+.bg-\[\#1c120c\]\/90 {
+  background-color: rgba(251, 250, 246, 0.9) !important;
+}
+
+/* Panel & Card backgrounds */
+.bg-\[\#2d1e16\] {
+  background-color: #f3efe5 !important;
+}
+.bg-\[\#2d1e16\]\/30 {
+  background-color: rgba(243, 239, 229, 0.4) !important;
+}
+.bg-\[\#2d1e16\]\/60 {
+  background-color: rgba(243, 239, 229, 0.7) !important;
+}
+.bg-\[\#322016\] {
+  background-color: #eae3d5 !important;
+}
+.hover\:bg-\[\#322016\]:hover {
+  background-color: #eae3d5 !important;
+}
+.bg-\[\#241710\]\/40 {
+  background-color: rgba(234, 227, 213, 0.4) !important;
+}
+.bg-\[\#22160f\] {
+  background-color: #ede7db !important;
+}
+.bg-\[\#130b06\] {
+  background-color: #f3ede2 !important;
+}
+.bg-\[\#0d0704\] {
+  background-color: #eae2d6 !important;
+}
+
+/* Borders */
+.border-\[\#3e2719\] {
+  border-color: #dfd8cb !important;
+}
+.border-\[\#3e2719\]\/40 {
+  border-color: rgba(223, 216, 203, 0.4) !important;
+}
+.border-\[\#3e2719\]\/60 {
+  border-color: rgba(223, 216, 203, 0.6) !important;
+}
+
+/* Texts */
+.text-\[\#f7efe9\] {
+  color: #1c2620 !important;
+}
+.text-\[\#a08e82\] {
+  color: #6b5849 !important; /* Beautiful warm soft brown/coffee instead of dark green */
+}
+.text-\[\#a08e82\]\/60 {
+  color: rgba(107, 88, 73, 0.6) !important;
+}
+.text-\[\#a08e82\]\/80 {
+  color: rgba(107, 88, 73, 0.8) !important;
+}
+
+/* Accent details (Gold -> Vibrant gold/yellow with excellent contrast on beige) */
+.text-\[\#d4af37\] {
+  color: #b5850b !important; /* Elegant bright golden bronze */
+}
+.border-\[\#d4af37\]\/30 {
+  border-color: rgba(181, 133, 11, 0.3) !important;
+}
+.border-\[\#d4af37\]\/40 {
+  border-color: rgba(181, 133, 11, 0.4) !important;
+}
+.border-\[\#d4af37\] {
+  border-color: #b5850b !important;
+}
+.bg-\[\#d4af37\]\/10 {
+  background-color: rgba(181, 133, 11, 0.1) !important;
+}
+.bg-\[\#d4af37\]\/20 {
+  background-color: rgba(181, 133, 11, 0.15) !important;
+}
+
+/* Input text focus */
+input, select, textarea {
+  color: #1b2a1f !important;
+}
+input::placeholder, textarea::placeholder {
+  color: #8fa093 !important;
+}
+
